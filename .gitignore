@@ -1,0 +1,24 @@
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Secrets and local settings
+.env
+.env.*
+*.pem
+*.key
+*.keystore
+*.jks
+
+# Disk images and archives (link to official sources instead)
+*.img
+*.iso
+*.zip
+*.tar
+*.tar.*
+*.tgz
+*.apk
