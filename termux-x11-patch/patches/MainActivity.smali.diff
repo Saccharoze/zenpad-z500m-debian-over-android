@@ -1,0 +1,31 @@
+--- MainActivity.orig.smali	2026-11-04 21:52:30.131633894 +0100
++++ MainActivity.patched.smali	2026-11-04 21:52:30.129763348 +0100
+@@ -2374,7 +2374,7 @@
+ .end method
+ 
+ .method private synthetic lambda$clientConnectedStateChanged$32()V
+-    .locals 6
++    .locals 8
+ 
+     .line 1262
+     invoke-virtual {p0}, Lcom/termux/x11/MainActivity;->getLorieView()Lcom/termux/x11/LorieView;
+@@ -2522,7 +2522,18 @@
+ 
+     move-result-object v2
+ 
+-    invoke-static {p0, v1}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
++    # patch: PointerIcon TYPE_NULL does not hide the Android mouse pointer on this Android 7 build -> use a transparent 1x1 custom icon
++    const/4 v6, 0x1
++
++    sget-object v7, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
++
++    invoke-static {v6, v6, v7}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
++
++    move-result-object v7
++
++    const/4 v6, 0x0
++
++    invoke-static {v7, v6, v6}, Landroid/view/PointerIcon;->create(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;
+ 
+     move-result-object v1
+ 

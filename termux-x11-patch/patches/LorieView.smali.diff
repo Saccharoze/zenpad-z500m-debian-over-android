@@ -1,0 +1,58 @@
+--- LorieView.orig.smali	2026-11-03 10:58:07.750473829 +0100
++++ LorieView.patched.smali	2026-11-03 10:58:07.748037843 +0100
+@@ -53,6 +53,8 @@
+ 
+ .field private final mIMM:Landroid/view/inputmethod/InputMethodManager;
+ 
++.field private mJavaConnected:Z
++
+ .field private mNativeContext:J
+ 
+ .field private final mSurfaceCallback:Landroid/view/SurfaceHolder$Callback;
+@@ -1541,21 +1543,43 @@
+ .end method
+ 
+ .method public connect(I)V
+-    .locals 2
++    .locals 3
+     .param p1, "fd"    # I
+ 
+-    .line 719
+     iget-wide v0, p0, Lcom/termux/x11/LorieView;->mNativeContext:J
+ 
+     invoke-static {v0, v1, p1}, Lcom/termux/x11/LorieView;->connect(JI)V
+ 
++    # patch: remember connection state in Java (CriticalNative connected() is broken below API 26)
++    const/4 v2, 0x0
++
++    const/4 v0, -0x1
++
++    if-eq p1, v0, :cond_set
++
++    const/4 v2, 0x1
++
++    :cond_set
++    iput-boolean v2, p0, Lcom/termux/x11/LorieView;->mJavaConnected:Z
++
+     return-void
+ .end method
+ 
+ .method public connected()Z
+     .locals 2
+ 
+-    .line 722
++    # patch: @CriticalNative is ignored before Android 8 -> native gets JNIEnv* as ptr -> garbage
++    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
++
++    const/16 v1, 0x1a
++
++    if-ge v0, v1, :use_native
++
++    iget-boolean v0, p0, Lcom/termux/x11/LorieView;->mJavaConnected:Z
++
++    return v0
++
++    :use_native
+     iget-wide v0, p0, Lcom/termux/x11/LorieView;->mNativeContext:J
+ 
+     invoke-static {v0, v1}, Lcom/termux/x11/LorieView;->connected(J)Z
