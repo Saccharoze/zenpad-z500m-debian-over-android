@@ -1,0 +1,246 @@
+== version
+Linux version 3.18.35+ (android@mcrd1-13) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Jun 21 19:26:39 CST 2018
+== cmdline
+console=tty0 console=ttyMT0,921600n1 root=/dev/ram console=ttyS0,921600n1 androidboot.verifiedbootstate=orange bootopt=64S3,32N2,64N2 buildvariant=user  printk.disable_uart=1 bootprof.pl_t=3195 bootprof.lk_t=8137 boot_reason=4 SB=Y UNLOCKED=N
+
+== props
+ro.product.model=P027
+ro.product.device=P027
+ro.board.platform=mt8173
+ro.hardware=mt8173
+ro.build.fingerprint=asus/WW_P027/P027:7.0/NRD90M/14.0210.1806.33-20180621:user/release-keys
+ro.bootloader=unknown
+ro.boot.hardware=mt8173
+ro.mediatek.platform=MT8173
+ro.boot.serialno=<redacted>
+ro.product.cpu.abi=arm64-v8a
+== dt model/compatible
+MT8176
+mediatek,asus8176_tb_z5_n mediatek,mt8173 
+== fdt
+ls: /sys/firmware/fdt: No such file or directory
+lrwxrwxrwx  1 root root 29 2026-11-05 19:29 /proc/device-tree -> /sys/firmware/devicetree/base
+drwxr-xr-x 30 root root  0 2026-11-05 19:29 /sys/firmware/devicetree/base
+== by-name
+total 0 0
+ADF /dev/block/mmcblk0p23
+APD /dev/block/mmcblk0p22
+asdf /dev/block/mmcblk0p21
+boot /dev/block/mmcblk0p6
+cache /dev/block/mmcblk0p27
+devinfo /dev/block/mmcblk0p24
+dkb /dev/block/mmcblk0p20
+expdb /dev/block/mmcblk0p9
+frp /dev/block/mmcblk0p16
+kb /dev/block/mmcblk0p19
+keystore /dev/block/mmcblk0p13
+lk /dev/block/mmcblk0p4
+logo /dev/block/mmcblk0p8
+metadata /dev/block/mmcblk0p18
+nvdata /dev/block/mmcblk0p17
+nvram /dev/block/mmcblk0p3
+oemkeystore /dev/block/mmcblk0p11
+para /dev/block/mmcblk0p5
+persist /dev/block/mmcblk0p1
+priv /dev/block/mmcblk0p25
+proinfo /dev/block/mmcblk0p2
+recovery /dev/block/mmcblk0p7
+seccfg /dev/block/mmcblk0p10
+secro /dev/block/mmcblk0p12
+system /dev/block/mmcblk0p26
+tee1 /dev/block/mmcblk0p14
+tee2 /dev/block/mmcblk0p15
+userdata /dev/block/mmcblk0p28
+== /proc/partitions
+major minor  #blocks  name
+
+ 254        0    2020260 zram0
+ 179        0   61071360 mmcblk0
+ 179        1      32768 mmcblk0p1
+ 179        2       3072 mmcblk0p2
+ 179        3       5120 mmcblk0p3
+ 179        4        512 mmcblk0p4
+ 179        5        512 mmcblk0p5
+ 179        6      16384 mmcblk0p6
+ 179        7      16384 mmcblk0p7
+ 179        8       8192 mmcblk0p8
+ 179        9      10240 mmcblk0p9
+ 179       10        512 mmcblk0p10
+ 179       11       2048 mmcblk0p11
+ 179       12       6144 mmcblk0p12
+ 179       13       8192 mmcblk0p13
+ 179       14       5120 mmcblk0p14
+ 179       15       5120 mmcblk0p15
+ 179       16       1024 mmcblk0p16
+ 179       17      32768 mmcblk0p17
+ 179       18      37888 mmcblk0p18
+ 179       19      10240 mmcblk0p19
+ 179       20      10240 mmcblk0p20
+ 179       21      32768 mmcblk0p21
+ 179       22     204800 mmcblk0p22
+ 179       23      32768 mmcblk0p23
+ 179       24       1024 mmcblk0p24
+ 179       25        512 mmcblk0p25
+ 179       26    3932160 mmcblk0p26
+ 179       27     358400 mmcblk0p27
+ 179       28   56295919 mmcblk0p28
+ 179       96       4096 mmcblk0rpmb
+ 179       64       4096 mmcblk0boot1
+ 179       32       4096 mmcblk0boot0
+ 253        0   56295919 dm-0
+== mmc hosts
+mmc0: mmc0:0001 
+   mmc0:0001 type=MMC name=HCG4a2 vendor= device=
+mmc1: 
+mmc2: mmc2:0001 
+   mmc2:0001 type=SDIO name= vendor= device=
+== i2c
+0-0020: name=cap_touch driver= of=
+0-004a: name=atmel_mxt_ts driver=atmel_mxt_ts of=
+1-0068: name=da9212-regulator driver=da9212-regulator of=
+2-000c: name=ak09916 driver=inv-ak0991x-iio of=
+2-001c: name=dynaimage_al3320 driver=al3320 of=
+2-002c: name=lp8557 driver=lp8557 of=
+2-0068: name=mpu6515 driver=inv-mpu-iio of=
+3-000c: name=camera_main_af driver=MAINAF of=
+3-0010: name=camera_hw2_i2c driver=kd_camera_hw_bus2 of=
+3-0036: name=camera_hw_i2c driver=kd_camera_hw of=
+4-001b: name=rt5659 driver=rt5659 of=
+4-002c: name=8173led_i2c driver= of=
+4-0038: name=us5587 driver=us5587 of=
+4-0039: name=alsps driver= of=
+4-003e: name=tps65132 driver=tps65132 of=
+4-004e: name=rt1711 driver=rt1711h of=
+4-006a: name=smb1351-charger driver=smb1351-charger of=
+i2c-0: name=i2c-mt65xx driver= of=
+i2c-1: name=i2c-mt65xx driver= of=
+i2c-2: name=i2c-mt65xx driver= of=
+i2c-3: name=i2c-mt65xx driver= of=
+i2c-4: name=i2c-mt65xx driver= of=
+i2c-5: name=i2c-mt65xx driver= of=
+== spi
+== input
+N: Name="mtk-kpd"
+P: Phys=
+H: Handlers=event0 gpufreq_ib dynamic_boost 
+N: Name="fingerprintkey_input"
+P: Phys=/dev/input/fingerprintkey_indev
+H: Handlers=event1 gpufreq_ib dynamic_boost 
+N: Name="lid_input"
+P: Phys=/dev/input/lid_indev
+H: Handlers=event2 gpufreq_ib dynamic_boost 
+N: Name="al3320"
+P: Phys=
+H: Handlers=event3 gpufreq_ib dynamic_boost 
+N: Name="rt5659-audio Headset Detection"
+P: Phys=ALSA
+H: Handlers=event4 gpufreq_ib dynamic_boost 
+N: Name="mtk-tpd"
+P: Phys=
+H: Handlers=event6 gpufreq_ib dynamic_boost 
+N: Name="atmel_mxt_ts_T100_touchscreen"
+P: Phys=i2c-0-004a/input0
+H: Handlers=event5 gpufreq_ib dynamic_boost 
+N: Name="Validity_Navigation_Sensor"
+P: Phys=
+H: Handlers=event7 gpufreq_ib dynamic_boost 
+== asound
+ 0 [rt5659audio    ]: rt5659-audio - rt5659-audio
+                      rt5659-audio
+00-00: MultiMedia1_Playback rt5659-aif2-0 :  : playback 1
+00-01: MultiMedia1_Capture rt5659-aif1-1 :  : capture 1
+00-02: HDMI_Playback snd-soc-dummy-dai-2 :  : playback 1
+00-03: BTSCO_Stream snd-soc-dummy-dai-3 :  : playback 1 : capture 1
+00-04: DL1_AWB_Capture snd-soc-dummy-dai-4 :  : capture 1
+00-05: MultiMedia2_Capture snd-soc-dummy-dai-5 :  : capture 1
+00-06: HDMI_Raw_Playback snd-soc-dummy-dai-6 :  : playback 1
+00-07: SPDIF_Playback snd-soc-dummy-dai-7 :  : playback 1
+00-08: I2S0_AWB_Capture snd-soc-dummy-dai-8 :  : capture 1
+00-09: MRGRX_PLayback rt5659-aif1-9 :  : playback 1
+00-10: MRGRX_CAPTURE snd-soc-dummy-dai-10 :  : capture 1
+00-11: MultiMedia2_Playback rt5659-aif2-11 :  : playback 1
+00-12: (MultiMedia Routing) : 
+== power_supply
+ac: type=Mains cap= tech=
+battery: type=Battery cap=83 tech=Li-ion
+pen_bat: type=PenBattery cap= tech=
+usb: type=USB cap= tech=
+== net
+ifb0
+ifb1
+ip6tnl0
+lo
+p2p0
+sit0
+tunl0
+wlan0
+ifb0 ->  drv=
+ifb1 ->  drv=
+ip6tnl0 ->  drv=
+lo ->  drv=
+p2p0 ->  drv=
+sit0 ->  drv=
+tunl0 ->  drv=
+wlan0 -> ../../../mmc2:0001:1 drv=../../../../../../../bus/sdio/drivers/mtk_sdio_client
+== modules
+texfat 276704 - - Live 0x0000000000000000 (P)
+== cpu
+0-5
+cpu0 part: CPU part	: 0xd03
+cpu4 part: CPU part	: 0xd03
+      3 CPU part	: 0xd03
+      2 CPU part	: 0xd08
+      1 Hardware	: MT8176
+== mem
+MemTotal:        4040516 kB
+MemFree:         2699296 kB
+== usb
+11270000.usb
+== typec/extcon
+ls: /sys/class/typec: No such file or directory
+ls: /sys/class/extcon: No such file or directory
+dual-role-type_c_port0
+== drm/fb
+/sys/class/drm:
+card0
+controlD64
+renderD128
+version
+
+/sys/class/graphics:
+fb0
+1536,6144
+mtkfb
+== gpu
+ls: /sys/devices/platform/*gpu*: No such file or directory
+ls: /sys/devices/platform/*mfg*: No such file or directory
+/dev/dri
+/dev/pvr_sync
+== thermal
+thermal_zone0: mtktscpu
+thermal_zone1: mtktsabb
+thermal_zone10: mtkts4
+thermal_zone2: mtktsbattery
+thermal_zone3: mtktspmic
+thermal_zone4: mtktswmt
+thermal_zone5: battery
+thermal_zone6: mtktsAP
+thermal_zone7: mtkts1
+thermal_zone8: mtkts2
+thermal_zone9: mtkts3
+== dmesg hw grep
+[ 2251.363888]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_skip_battery_100Percent_tracking: FLOAT_VOLT_REG is: 42
+[ 2251.365690]  (1)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 charging_get_charging_status: register 0x42[0] is : 0 
+[ 2251.365974]  (1)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status: [BAT][Ser]report Capacity==>82,FCC:5900mA,BMS:82,ZCV:4005
+[ 2251.365992]  (1)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status:  V:3962mV,Cur:0mA,Temp:28C (1)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status:  BatCur:325mA
+[ 2251.366059]  (1)[207:bat_thread_kthr]SMB1351 smb1351_charging_algorithm: same charger: STANDARD_HOST
+[ 2251.366233]  (1)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_charging_algorithm: 36h[3:0] Input current limit is: 1500mA.
+[ 2251.366425]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_charging_algorithm: 00h[3:0] AC input current limit is: 500mA.
+[ 2251.366929]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_skip_battery_100Percent_tracking: FLOAT_VOLT_REG is: 42
+[ 2261.483788]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_skip_battery_100Percent_tracking: FLOAT_VOLT_REG is: 42
+[ 2261.484644]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 charging_get_charging_status: register 0x42[0] is : 0 
+[ 2261.484948]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status: [BAT][Ser]report Capacity==>82,FCC:5900mA,BMS:82,ZCV:4006
+[ 2261.484969]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status:  V:3961mV,Cur:0mA,Temp:28C (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 UTS_battery_status:  BatCur:604mA
+[ 2261.485012]  (0)[207:bat_thread_kthr]SMB1351 smb1351_charging_algorithm: same charger: STANDARD_HOST
+[ 2261.485187]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_charging_algorithm: 36h[3:0] Input current limit is: 1500mA.
+[ 2261.485352]  (0)[207:bat_thread_kthr][name:smb1351_charger&]SMB1351 smb1351_charging_algorithm: 00h[3:0] AC input current limit is: 500mA.
