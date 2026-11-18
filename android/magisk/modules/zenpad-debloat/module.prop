@@ -1,0 +1,6 @@
+id=zenpad-debloat
+name=ZenPad debloat
+version=v3
+versionCode=3
+author=Nicolas
+description=Systemlessly removes preinstalled bloat (Kindle, Facebook, Instagram, TripAdvisor, Puffin, Zinio, demo mode...). Remove this module to restore them.
