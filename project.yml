@@ -4,6 +4,7 @@ section: phone        # website section: books | pcb | phone | webcam | analyzer
 status: done          # active | paused | done
 tags: [android, debian, chroot, magisk, termux, x11, pulseaudio, mediatek]
 repo: "https://github.com/Saccharoze/zenpad-z500m-debian-over-android"
+image: docs/img/desktop.jpg   # picture for the card, path inside the repo
 fr:
   title: "Un bureau Debian sur une tablette Android 7"
   summary: "Une ASUS ZenPad 3S 10 qui fait tourner LXDE, Firefox et YouTube avec le son dans un chroot Debian, par-dessus Android : déverrouillage, root, affichage, audio, démarrage."
