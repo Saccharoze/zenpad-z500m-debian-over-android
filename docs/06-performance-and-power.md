@@ -64,7 +64,8 @@ are untouched. `touch /data/local/tmp/zenpad-tune.off` skips it at the next boot
 
 ## Power
 
-The charger chip (SMB1351) decides how much current to draw from what it detects on USB. Measured:
+The charger chip (SMB1351) decides how much current to draw from what it detects on USB. Measured with
+[`chg.sh`](../evidence/how-measured/chg.sh) and [`batt.sh`](../evidence/how-measured/batt.sh):
 
 | | Detected as | Input limit | Battery |
 |---|---|---|---|
@@ -74,7 +75,8 @@ The charger chip (SMB1351) decides how much current to draw from what it detects
 So the tablet needs a wall charger.
 
 On battery, with the desktop idle and the backlight at 9 out of 255, the fuel gauge read about 0.47 A at 4.03 V,
-so about 1.9 W (30 samples over 60 s, [`evidence/raw/power.raw`](../evidence/raw/power.raw)).
+so about 1.9 W (30 samples over 60 s, [`evidence/raw/power.raw`](../evidence/raw/power.raw), from
+[`powertest.sh`](../evidence/how-measured/powertest.sh)).
 The test was meant to go on with Firefox and video, but stopped after this first phase.
 
 ## Don't

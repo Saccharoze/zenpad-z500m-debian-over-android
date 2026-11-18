@@ -58,7 +58,7 @@ flowchart TB
 | `hardware/` | device trees (`.dts`) and hardware inventory |
 | `evidence/` | raw benchmark outputs and the scripts that produced them |
 | `docs/` | write-ups for each step, photos in `docs/img/` |
-| `tools/` | privacy check, invisible cursor theme generator |
+| `tools/` | invisible cursor theme generator |
 
 ## License
 

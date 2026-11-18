@@ -7,7 +7,7 @@ state of mainline Linux in November 2026.
 ## The hardware
 
 From [`hardware/p027-live.dts`](../hardware/p027-live.dts) (the device tree as booted) and
-[`hardware/hw-inventory.txt`](../hardware/hw-inventory.txt):
+[`hardware/hw-inventory.txt`](../hardware/hw-inventory.txt) (made by [`hwinv.sh`](../evidence/how-measured/hwinv.sh)):
 
 | Part | Chip | In mainline Linux |
 |---|---|---|
@@ -48,7 +48,8 @@ For a tablet used every day, the chroot wins.
 
 ## What a boot image must look like
 
-Read from the stock boot image and from what LK does to it:
+Read from the stock boot image and from what LK does to it (compare the device tree inside the boot image,
+[`hardware/p027-bootimg.dts`](../hardware/p027-bootimg.dts), with the one as booted):
 
 - The stock command line holds `bootopt=64S3,32N2,64N2`, which LK reads to start the kernel in 64-bit mode.
 - The kernel is `Image.gz` with the device tree appended, loaded at `0x40080000`. Decompressed, it must end
