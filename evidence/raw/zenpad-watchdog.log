@@ -1,0 +1,109 @@
+11-04 19:39:40 boot
+11-04 19:39:52 audio down -> start
+11-04 19:39:57 X server down -> start
+11-04 19:39:58 socket dir mounted
+11-04 19:39:59 desktop down -> start
+LXDE started on Termux:X11 (:0)
+11-04 19:40:27 audio down -> start
+11-04 19:40:49 audio down -> start
+11-04 19:41:14 boot
+11-04 19:41:26 audio down -> start
+11-04 19:41:49 audio down -> start
+11-04 19:42:11 audio down -> start
+11-04 19:42:34 audio down -> start
+11-04 19:42:57 audio down -> start
+11-04 19:43:20 audio down -> start
+11-04 19:44:04 audio down -> start
+11-04 19:44:13 X server down -> start
+11-04 19:44:17 desktop down -> start
+LXDE started on Termux:X11 (:0)
+11-04 19:51:19 boot
+11-04 19:51:32 audio down -> start
+11-04 19:51:37 X server down -> start
+11-04 19:51:37 socket dir mounted
+11-04 19:51:39 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+--- restart Wed Nov  4 19:53:34 CET 2026
+11-04 19:53:34 boot
+11-04 19:53:37 X server down -> start
+11-04 19:53:40 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+--- single-instance restart Wed Nov  4 19:55:57 CET 2026
+11-04 19:55:57 boot
+11-04 19:58:30 boot
+11-04 19:59:09 socket dir mounted
+11-04 19:59:10 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+--- oom-protect restart Wed Nov  4 20:10:46 CET 2026
+11-04 20:10:46 boot
+11-04 20:30:49 boot
+11-04 20:31:25 socket dir mounted
+11-04 20:31:27 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-04 21:02:12 boot
+11-04 21:02:31 socket dir mounted
+11-04 21:02:32 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-04 21:26:51 boot
+11-04 21:27:08 socket dir mounted
+11-04 21:27:09 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-04 21:29:49 X server down -> start
+11-04 21:29:51 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+--- tuning restart Wed Nov  4 21:31:56 CET 2026
+11-04 21:31:57 boot
+11-04 21:31:57 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-04 22:05:59 desktop down -> start
+LXDE started on Termux:X11 (:0)
+11-04 22:38:06 desktop down -> start
+LXDE started on Termux:X11 (:0)
+11-04 23:29:22 desktop down -> start
+LXDE started on Termux:X11 (:0)
+11-05 00:25:32 boot
+11-05 00:25:32 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 00:28:16 audio down -> start
+11-05 00:28:20 X server down -> start
+11-05 00:28:21 socket dir mounted
+11-05 00:28:24 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-05 16:41:34 boot
+11-05 16:41:34 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 16:41:48 socket dir mounted
+11-05 16:41:49 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-05 16:43:42 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-05 17:31:45 boot
+11-05 17:31:46 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 17:32:02 socket dir mounted
+11-05 17:32:03 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-05 18:47:44 boot
+11-05 18:47:44 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 18:48:00 socket dir mounted
+11-05 18:48:01 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)
+11-05 20:51:46 audio down -> start
+11-05 21:50:47 boot
+11-05 21:50:47 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 21:55:13 boot
+11-05 21:55:13 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 23:27:04 boot
+11-05 23:27:04 tuned: hispeed_load=85 target=80 hps=65/50 io=noop [deadline] cfq 
+11-05 23:27:20 socket dir mounted
+11-05 23:27:21 desktop down -> start
+ERROR: ld.so: object 'libdirect-coredump.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+LXDE started on Termux:X11 (:0)

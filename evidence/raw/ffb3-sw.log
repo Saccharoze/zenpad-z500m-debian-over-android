@@ -1,0 +1,3 @@
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: ManageChildProcess(glxtest): poll failed: No such file or directory
+ (t=6.18515) [GFX1-]: ManageChildProcess(glxtest): poll failed: No such file or directory
+

@@ -1,0 +1,19 @@
+== sw / normal page
+  idle after 45s
+  page says:    (46s)
+  screen FPS per 5 s: 5.4 FPS 30.0 FPS 29.6 FPS 28.8 FPS 24.4 FPS 2.6 FPS 0.2 FPS 
+  CPU (% of one core): firefox=17 virgl=0 xserver=5 termux-x11-app=8  TOTAL=30
+  temp: 79400
+== hw / normal page
+  idle after 15s
+  page says:    (46s)
+  screen FPS per 5 s: 15.2 FPS 21.4 FPS 21.4 FPS 19.6 FPS 8.2 FPS 
+  CPU (% of one core): firefox=37 virgl=25 xserver=6 termux-x11-app=5  TOTAL=73
+  temp: 71200
+== sw / heavy page
+  idle after 15s
+  page says:    (47s)
+  screen FPS per 5 s: 0.6 FPS 8.4 FPS 8.2 FPS 8.0 FPS 9.0 FPS 2.0 FPS 
+  CPU (% of one core): firefox=70 virgl=0 xserver=4 termux-x11-app=2  TOTAL=76
+  temp: 75100
+== hw / heavy page
