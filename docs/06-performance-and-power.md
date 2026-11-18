@@ -83,3 +83,7 @@ The test was meant to go on with Firefox and video, but stopped after this first
 
 On this firmware, `settings put global background_process_limit 0` sends the tablet into a boot loop. To get out, catch the
 few seconds Android stays up and run `settings put global background_process_limit -1` over adb.
+
+---
+
+Previous: [Boot and self-healing](05-boot-and-self-healing.md) · [All steps](../README.md#steps) · Next: [Why not native Debian](07-why-not-native-debian.md)

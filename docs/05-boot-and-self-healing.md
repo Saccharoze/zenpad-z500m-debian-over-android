@@ -105,3 +105,7 @@ nohup env ASH_STANDALONE=1 /data/adb/magisk/busybox sh -o standalone /data/adb/s
 
 `-mm` runs the root shell in the global mount namespace, so its mounts are visible to everything else, like at boot.
 The script writes its PID to that file and exits at once if another copy is running.
+
+---
+
+Previous: [Audio](04-audio.md) · [All steps](../README.md#steps) · Next: [Performance and power](06-performance-and-power.md)

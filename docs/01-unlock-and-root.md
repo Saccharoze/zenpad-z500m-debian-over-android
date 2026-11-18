@@ -125,3 +125,7 @@ Magisk > Modules > Remove, then a reboot, brings them all back.
 - Re-lock: restore the stock boot image first, or the tablet won't boot. Then run the tool from TWRP again and choose 2. It flips the flag back, no backup needed.
 - `fastboot boot` always works, so an image never has to be written to be tested.
 - TWRP can't read the encrypted `/data`, so Android-side mistakes are fixed over adb, during the seconds Android stays up in a boot loop. That's how the `pm disable-user` loop was undone (`pm enable <package>`).
+
+---
+
+[All steps](../README.md#steps) · Next: [The Debian chroot](02-debian-chroot.md)

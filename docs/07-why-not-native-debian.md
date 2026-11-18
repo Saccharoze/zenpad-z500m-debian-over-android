@@ -68,3 +68,7 @@ first boot, with no way to see the kernel's output.
 Sources: [ASUS kernel source](https://github.com/Goayandi/android_kernel_asus_z500m),
 [PowerVR GX6250 patches](https://lkml.iu.edu/2607.3/12558.html),
 [XDA MT8173/MT8176 development thread](https://xdaforums.com/t/mediatek-mt8173-mt8176-development.3791009/).
+
+---
+
+Previous: [Performance and power](06-performance-and-power.md) · [All steps](../README.md#steps)

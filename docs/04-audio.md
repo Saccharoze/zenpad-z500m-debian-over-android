@@ -89,3 +89,7 @@ The boot script now runs the silence test about once a minute. A stall it caught
 
 The hardware volume buttons don't change the level. The PulseAudio sink volume, the stream volume and
 Android's media volume were all tried, with no audible change. Volume is set in the app that plays.
+
+---
+
+Previous: [Display](03-display.md) · [All steps](../README.md#steps) · Next: [Boot and self-healing](05-boot-and-self-healing.md)

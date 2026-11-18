@@ -99,3 +99,7 @@ then `sh /data/local/tmp/start-linux.sh` as root.
 
 Everything is drawn by the CPU (Mesa's llvmpipe). A GPU path was tried and was slower:
 see [Performance and power](06-performance-and-power.md).
+
+---
+
+Previous: [The Debian chroot](02-debian-chroot.md) · [All steps](../README.md#steps) · Next: [Audio](04-audio.md)

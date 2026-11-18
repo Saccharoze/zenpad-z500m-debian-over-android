@@ -108,3 +108,7 @@ The first line makes apt run as root. The others force IPv4 and make downloads m
 
 SELinux stays enforcing (`getenforce` answers `Enforcing`). The chroot runs in the SELinux context of
 Magisk's `su`, which is allowed to do all of this. `setenforce 0` was never needed.
+
+---
+
+Previous: [Unlock and root](01-unlock-and-root.md) · [All steps](../README.md#steps) · Next: [Display](03-display.md)
